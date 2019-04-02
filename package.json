@@ -1,0 +1,51 @@
+{
+  "name": "manggis.db",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "A MongoDB wrapper using Mongoose API and memory caching for better callbacks",
+  "main": "src/index.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "test": "standard --fix test/index.js && node test/index.js",
+    "lint:gulp": "gulp lint",
+    "lint": "npm run lint:gulp -s",
+    "docs:gulp": "gulp docs",
+    "docs": "npm run docs:gulp -s",
+    "styles": "standard --fix",
+    "git:precommit": "npm run docs && git add . && git commit -am \"Precommit made from NPM\" && git push"
+  },
+  "author": "Lolization LLC x DiscordBots Nation",
+  "contributor": [
+    {
+      "name": "Riichi Rusdiana",
+      "discord.tag": "Riichi_Rusdiana#6815",
+      "github": "https://github.com/BillyAddlers"
+    },
+    {
+      "name": "Hazmi35",
+      "discord.tag": "Hazmi35#1855",
+      "github": "https://github.com/Hazmi35"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "del": "^4.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-prettier": "^2.1.0",
+    "jsdoc-to-markdown": "^4.0.1",
+    "plugin-error": "^1.0.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.2"
+  }
+}
